@@ -10,6 +10,7 @@ class ChurnPrediction:
         self.feature_order = list[str]
 
     def model_fit(self, df:pd.DataFrame, target_column ="drop_off", category_cols = None)->None:
+        """Trained using Random Forest on session behavior + cluster info"""
         if category_cols is None:
             category_cols = ['gender','user_goal','content_preference','user_cluster']
         
@@ -24,17 +25,20 @@ class ChurnPrediction:
         self.model.fit(independent_features,label)
 
     def save(self, model_path:str="churn_model.joblib",encoder_path:str="encoder_churn_model.joblib",feature_order_path="feature_order.joblib")->None:
+        """Saving the traiend model"""
         joblib.dump(self.model,model_path)
         joblib.dump(self.encoder,encoder_path)
         joblib.dump(self.feature_order,feature_order_path)
 
     def load(self, model_path:str="churn_model.joblib", encoder_path:str="encoder_churn_model.joblib",feature_order_path="feature_order.joblib")->None:
+        """loading the trained model"""
         self.model = joblib.load(model_path)
         self.encoder = joblib.load(encoder_path)
         self.feature_order = joblib.load(feature_order_path)
 
 
     def predict_prob(self, user_data:dict)->float:
+        """predicting churn rate for the new users"""
         if not self.model or not self.encoder:
             raise ValueError("Model and encoders are not loaded ")
         
