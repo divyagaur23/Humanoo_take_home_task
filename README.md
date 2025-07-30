@@ -38,9 +38,9 @@ Menu-driven tool to:
 
 user-churn-predictor/
 
-├── churn_model.py                    # Random Forest churn model class
-├── user_clusters.py                  # K-Prototypes clustering class
-├── synthetic_user_data.py            # Synthetic user data generator
-├── main.py                           # Main entry for the CLI tool
-├── README.md                         # contains information about the logic and the how-to for code
+1. churn_model.py                    # Random Forest churn model class
+2. user_clusters.py                  # K-Prototypes clustering class
+3. synthetic_user_data.py            # Synthetic user data generator
+4.  main.py                           # Main entry for the CLI tool
+5.  EADME.md                         # contains information about the logic and the how-to for code
 
