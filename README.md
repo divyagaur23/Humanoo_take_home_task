@@ -13,7 +13,9 @@ It is a CLI (Command Line Interface) based tool. All interactions with the code 
 
 **Install Dependencies:** 
 requirements.txt mentions all the libraries required. 
+
 To install the dependencies the following needs to be run:
+
 pip(python_version) install -r requirements.txt
 
 **Running the CLI tool:**
