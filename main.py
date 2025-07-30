@@ -4,17 +4,22 @@ from churn_model import ChurnPrediction
 import os
 
 def main():
+    """Number of usesr and the features have been hardcoded here along with the features"""
     user_count = 150
+    """This is the content type present in the app"""
     all_content_types = ['text', 'video']
+    """These are the goals offered by the app"""
     all_goals = ['weight loss', 'eat better']
     gender = ['female','male']
     synth_data = SyntheticUserData(user_count,all_content_types,all_goals,gender)
+    """These paths will directly save the data in the working directory however these could be updated here"""
     DATA_PATH = "user_data.csv"
     CLUSTER_MODEL_PATH = "cluster_model.joblib"
     CHURN_MODEL_PATH = "churn_model.joblib"
     ENCODER_PATH =  "encoder_churn_model.joblib"
     FEATURE_ORDER_PATH = "feature_order.joblib"
 
+    """The number of clusters is hardcoded"""
     num_clusters = 3
     seed = 50
     clustering = KModeClustering(num_clusters,seed)
