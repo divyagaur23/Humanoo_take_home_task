@@ -1,7 +1,9 @@
 This project is a functional prototype for predicting early user drop-off in a wellness app using clustering and churn prediction models. 
 
 **Objective**
+
 We needed to create a AI/ML implementation to address the issue of early user drop-off.
+
 It addresses two main issues:
 1. Assigning new users to clusters to predict user behavuours early-on when we do not have enough data from the user themselves.
 2. Monitoring users when there is some behavioural data is collected and predicting the likellihood of drop-out.
@@ -33,7 +35,9 @@ Menu-driven tool to:
 
 
 **Folder Structure:**
+
 user-churn-predictor/
+
 ├── churn_model.py                    # Random Forest churn model class
 ├── user_clusters.py                  # K-Prototypes clustering class
 ├── synthetic_user_data.py            # Synthetic user data generator
