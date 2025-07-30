@@ -27,6 +27,7 @@ Menu-driven tool to:
   2. Predict user cluster (for new users)
   3. Predict churn probability (once session data is available)
 
+
 **Features:**
 
 1. **Synthetic Data Generation** – Simulates realistic user data with engagement signals (it captures age, gender, session and preferences information)
@@ -41,4 +42,8 @@ Menu-driven tool to:
 3. synthetic_user_data.py            # Synthetic user data generator
 4. main.py                           # Main entry for the CLI tool
 5. README.md                         # contains information about the logic and the how-to for code
+
+**Additional Information:**
+
+The paths to save the models and the dummy data is hardcoded in main.py and by default everything is saved in working directory, however if required this can be updated.
 
