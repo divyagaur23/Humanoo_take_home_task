@@ -36,11 +36,9 @@ Menu-driven tool to:
 
 **Folder Structure:**
 
-user-churn-predictor/
-
 1. churn_model.py                    # Random Forest churn model class
 2. user_clusters.py                  # K-Prototypes clustering class
 3. synthetic_user_data.py            # Synthetic user data generator
-4.  main.py                           # Main entry for the CLI tool
-5.  EADME.md                         # contains information about the logic and the how-to for code
+4. main.py                           # Main entry for the CLI tool
+5. README.md                         # contains information about the logic and the how-to for code
 
