@@ -36,9 +36,11 @@ class SyntheticUserData:
         return user_df
     
     def save_data(self, df:pd.DataFrame, filename:str="user_data.csv")->pd.DataFrame:
+        """save generated syntehtic data"""
         df.to_csv(filename,index=False)
 
     @staticmethod
     def load_data(filename:str = "user_data.csv")->None:
+        """load the saved synthetic data"""
         return pd.read_csv(filename)
 
