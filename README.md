@@ -18,16 +18,17 @@ pip(python_version) install -r requirements.txt
 
 **Running the CLI tool:**
 python main.py
-
-**Features:**
-
-**Synthetic Data Generation** – Simulates realistic user data with engagement signals (it captures age, gender, session and preferences information)
-**K-Prototypes Clustering** – Groups users based on categorical (goal, preference, gender) and numerical (age) features
-**Churn Prediction Model** – Trained using Random Forest on session behavior + cluster info
-**Interactive CLI** – Menu-driven tool to:
+Menu-driven tool to:
   1. Create data and train models and save their outcome for further interaction with the tool.
   2. Predict user cluster (for new users)
   3. Predict churn probability (once session data is available)
+
+**Features:**
+
+1. **Synthetic Data Generation** – Simulates realistic user data with engagement signals (it captures age, gender, session and preferences information)
+2. **K-Prototypes Clustering** – Groups users based on categorical (goal, preference, gender) and numerical (age) features
+3. **Churn Prediction Model** – Trained using Random Forest on session behavior + cluster info
+
 
 **Folder Structure:**
 user-churn-predictor/
