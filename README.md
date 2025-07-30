@@ -1,4 +1,4 @@
-This project is a functional prototype for predicting early user drop-off in a wellness app using clustering and churn prediction models. 
+This project is a functional prototype for predicting early user drop-off in a wellness app using clustering and churn prediction models. \\
 
 **Objective**
 We needed to create a AI/ML implementation to address the issue of early user drop-off.
